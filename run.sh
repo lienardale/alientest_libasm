@@ -1,6 +1,6 @@
 cd ..
 make
-cd alien_lasm_tests
+cd alientest_libasm
 make test
 tmp=$(diff test.txt test_2.txt)
 if [ "$tmp" == "" ];then

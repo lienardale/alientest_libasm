@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   strcpy_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alienard <alienard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 10:15:21 by alienard          #+#    #+#             */
-/*   Updated: 2020/03/10 11:19:46 by alienard         ###   ########.fr       */
+/*   Updated: 2020/10/29 15:00:18 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mainlibasm.h"
+#include "./../libasm.h"
 
 void	ft_strcpy_main(void)
 {

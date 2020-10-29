@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   write_main.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alienard <alienard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 17:48:17 by alienard          #+#    #+#             */
-/*   Updated: 2020/03/10 10:39:16 by alienard         ###   ########.fr       */
+/*   Updated: 2020/10/29 14:50:57 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_write_main(void)
 {
 	int fd;
 	int	fd2;
-	size_t ret;
+	ssize_t ret;
 
 	fd = open("../test.txt", O_RDONLY);
 	ret = write(fd, "test no right", 13);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mainlibasm.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alienard <alienard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 19:01:12 by alienard          #+#    #+#             */
-/*   Updated: 2020/03/11 18:03:24 by alienard         ###   ########.fr       */
+/*   Updated: 2020/10/29 15:39:11 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	ft_list_remove_if_main(void);
 void	ft_list_sort_main(void);
 void	ft_atoi_base_main(void);
 
-size_t	ft_write(int fildes, const void *buf, size_t nbyte);
+ssize_t	ft_write(int fildes, const void *buf, size_t nbyte);
 size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char * dst, const char * src);
 int		ft_strcmp(const char *s1, const char *s2);

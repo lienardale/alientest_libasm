@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: alienard <alienard@student.42.fr>          +#+  +:+       +#+         #
+#    By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/09 18:51:33 by alienard          #+#    #+#              #
-#    Updated: 2020/03/12 12:44:01 by alienard         ###   ########.fr        #
+#    Updated: 2020/10/29 15:49:25 by tefroiss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ HEADER = 	./
 
 AS = 		nasm
 
-CC =		gcc
+CC =		clang
 
 RM = 		rm -f
 
@@ -69,7 +69,7 @@ AR = 		ar rc
 
 CFLAGS =	-Wall -Wextra -Werror -I $(HEADER)
 
-ASFLAGS =	-fmacho64
+ASFLAGS =	-f elf64
 
 all:		$(NAME)
 
@@ -80,7 +80,7 @@ bonus:		$(OBJSBONUS)
 			$(AR) $(NAME) $(OBJSBONUS)
 
 test:			all $(OBJC)
-				$(CC) -L. -lasm $(OBJC)
+				${CC} ${CFLAGS} ${NAME} ${OBJS} ${OBJC}
 				./a.out
 
 test_bonus:		bonus $(OBJCBONUS)
